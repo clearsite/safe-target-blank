@@ -11,6 +11,7 @@
     iframe.style='display: none;';
     // add it to the DOM.
     document.body.appendChild(iframe);
+
     // prepare the new body,
     var html = '<body><scr'+'ipt>window.open("' + (e.target.getAttribute('href')) + '");</scr'+'ipt></body>';
     // open the document for writing,
@@ -28,7 +29,9 @@
   var onload=window.onload;
   window.onload=function(){
     // execute the old unload, if it exists
-    onload && onload();
+    if ('function' === typeof onload) {
+      onload();
+    }
 
     // gather al anchor elements
     var a = document.getElementsByTagName('a');
@@ -44,5 +47,5 @@
         a[i].setAttribute('data-target', 'target=_blank is insecure. This link is now protected against abuse and will still open in a new tab.');
       }
     }
-  }
+  };
 })();
