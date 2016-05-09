@@ -1,0 +1,32 @@
+{
+  "name": "safe-target-blank",
+  "version": "0.0.1",
+  "description": "Replaces the target=\"_blank\" with javascript to prevent abuse. For information on the vulnerability: see https://mathiasbynens.github.io/rel-noopener (no affiliation)",
+  "main": "safe-target-blank.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmpel/safe-target-blank.git"
+  },
+  "keywords": [
+    "Target",
+    "Blank",
+    "Safe",
+    "Vulnerability"
+  ],
+  "author": "Remon Pel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmpel/safe-target-blank/issues"
+  },
+  "homepage": "https://github.com/rmpel/safe-target-blank#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "1.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-jshint": "1.10.0",
+    "gulp-uglify": "^1.5.3"
+  }
+}
