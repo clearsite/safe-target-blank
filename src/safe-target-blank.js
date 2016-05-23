@@ -8,7 +8,7 @@
     // create an iframe,
     var iframe = document.createElement('iframe');
     // hide it from the user,
-    iframe.style='display: none;';
+    iframe.style.display = 'none';
     // add it to the DOM.
     document.body.appendChild(iframe);
 
