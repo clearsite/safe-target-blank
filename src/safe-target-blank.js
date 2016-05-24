@@ -13,7 +13,7 @@
     document.body.appendChild(iframe);
 
     // prepare the new body,
-    var html = '<body><scr'+'ipt>window.open("' + (e.target.getAttribute('href')) + '");</scr'+'ipt></body>';
+    var html = '<body><scr'+'ipt>window.open("' + (this.getAttribute('href')) + '");</scr'+'ipt></body>';
     // open the document for writing,
     iframe.contentWindow.document.open();
     // write the body,
